@@ -18,7 +18,7 @@ namespace Demo.Client
             }
 
             var proxy = new Proxies.ProcessClient();
-            this.lblOutput.Content = "You've sent: " + proxy.DoSomething(this.TxtInput.Text);
+            this.lblOutput.Content = proxy.DoSomething(this.TxtInput.Text);
             proxy.Close();
         }
     }

@@ -16,7 +16,7 @@ namespace Demo.CustomFilter
         public override bool Match(Message message)
         {
             // the message is in soap header
-            // in the <xxx> => parameter nam in the IContract !!!
+            // in the <xxx> => parameter name in the IContract !!!
             var returnValue = false;
 
             var search = $"{"<xxx>"}{this._filterData}{"</xxx>"}";

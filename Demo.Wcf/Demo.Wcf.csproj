@@ -41,7 +41,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DemoManager2.cs" />
     <Compile Include="DemoManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
