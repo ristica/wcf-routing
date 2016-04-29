@@ -7,6 +7,7 @@ namespace Demo.Host
     {
         static void Main(string[] args)
         {
+            System.Console.Title = "HOST - 1";
             System.Console.WriteLine("Starting the Service on host 1...");
             System.Console.WriteLine("");
 

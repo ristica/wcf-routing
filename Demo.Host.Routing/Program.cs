@@ -7,6 +7,7 @@ namespace Demo.Host.Routing
     {
         static void Main(string[] args)
         {
+            System.Console.Title = "ROUTING HOST";
             System.Console.WriteLine("### Routing Host ###");
             System.Console.WriteLine("");
 
