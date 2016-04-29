@@ -1,4 +1,7 @@
-﻿namespace Demo.Host.Backup
+﻿using Demo.Wcf;
+using System.ServiceModel;
+
+namespace Demo.Host.Backup
 {
     class Program
     {
@@ -8,8 +11,8 @@
             System.Console.WriteLine("Starting the Service on host 1...");
             System.Console.WriteLine("");
 
-            //var host = new ServiceHost(typeof(DemoManager));
-            //host.Open();
+            var host = new ServiceHost(typeof(DemoManager));
+            host.Open();
 
             System.Console.WriteLine("Service started!");
             System.Console.WriteLine("");
@@ -18,7 +21,7 @@
             System.Console.Read();
 
             // housekeeping
-            //host.Close();
+            host.Close();
         }
     }
 }

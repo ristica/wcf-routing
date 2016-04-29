@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,6 +49,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Demo.Contracts\Demo.Contracts.csproj">
+      <Project>{dee91ec8-8552-4b86-9aad-a2725916d96e}</Project>
+      <Name>Demo.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Demo.Wcf\Demo.Wcf.csproj">
+      <Project>{f1e5bbc1-8fee-42dc-bea3-dc5379861e50}</Project>
+      <Name>Demo.Wcf</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
