@@ -1,4 +1,5 @@
-﻿using System.ServiceModel.Channels;
+﻿using System;
+using System.ServiceModel.Channels;
 using System.ServiceModel.Dispatcher;
 
 namespace Demo.CustomFilter
@@ -14,7 +15,19 @@ namespace Demo.CustomFilter
 
         public override bool Match(Message message)
         {
-            return true;
+            // the message is in soap header
+            // in the <xxx> => parameter nam in the IContract !!!
+            var returnValue = false;
+
+            var search = $"{"<xxx>"}{this._filterData}{"</xxx>"}";
+
+            var s = message.ToString();
+            if (!string.IsNullOrWhiteSpace(s) && s.IndexOf(search, StringComparison.Ordinal) > -1)
+            {
+                returnValue = true;
+            }
+
+            return returnValue;
         }
 
         #region unused

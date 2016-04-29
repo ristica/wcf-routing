@@ -11,8 +11,14 @@ namespace Demo.Client
 
         private void BtnDoSomething(object sender, RoutedEventArgs e)
         {
-            var proxy = new Demo.Proxies.ProcessClient();
-            this.lblOutput.Content = proxy.DoSomething();
+            if (TxtInput.Text.Length < 1)
+            {
+                MessageBox.Show("No input to send...");
+                return;
+            }
+
+            var proxy = new Proxies.ProcessClient();
+            this.lblOutput.Content = "You've sent: " + proxy.DoSomething(this.TxtInput.Text);
             proxy.Close();
         }
     }

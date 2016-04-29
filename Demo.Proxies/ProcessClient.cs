@@ -5,9 +5,9 @@ namespace Demo.Proxies
 {
     public class ProcessClient : ClientBase<IContract>, IContract
     {
-        public string DoSomething()
+        public string DoSomething(string input)
         {
-            return Channel.DoSomething();
+            return Channel.DoSomething(input);
         }
     }
 }
