@@ -10,7 +10,7 @@ namespace Demo.Host2
             System.Console.WriteLine("Starting the Service on host 2...");
             System.Console.WriteLine("");
 
-            var host = new ServiceHost(typeof(DemoManager));
+            var host = new ServiceHost(typeof(DemoManager2));
             host.Open();
 
             System.Console.WriteLine("Service started!");

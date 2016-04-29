@@ -56,6 +56,10 @@
       <Project>{dee91ec8-8552-4b86-9aad-a2725916d96e}</Project>
       <Name>Demo.Contracts</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Demo.CustomFilter\Demo.CustomFilter.csproj">
+      <Project>{c5d5a8a5-0c8c-46d2-8ade-9377489ccc22}</Project>
+      <Name>Demo.CustomFilter</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

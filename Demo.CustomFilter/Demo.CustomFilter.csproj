@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DEE91EC8-8552-4B86-9AAD-A2725916D96E}</ProjectGuid>
+    <ProjectGuid>{C5D5A8A5-0C8C-46D2-8ADE-9377489CCC22}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Demo.Contracts</RootNamespace>
-    <AssemblyName>Demo.Contracts</AssemblyName>
+    <RootNamespace>Demo.CustomFilter</RootNamespace>
+    <AssemblyName>Demo.CustomFilter</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,8 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IContract2.cs" />
-    <Compile Include="IContract.cs" />
+    <Compile Include="CustomContentFilter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
